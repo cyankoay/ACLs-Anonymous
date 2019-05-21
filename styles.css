@@ -21,17 +21,27 @@ form { text-align:left;
   opacity:0.5;
 }
 
-/* Container holding the image and the text */
 .container {
   position: relative;
   text-align: center;
   color: black;
 }
 
-/* Centered text */
 .centered {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.description {font-size: 10px}
+.description:hover {font-size: 15px}
+
+@media only screen and (min-width: 768px) {
+  .description {font-size: 15px}
+  .description:hover {font-size: 20px}
+}
+
+@media only screen and (min-width: 1024px) {
+  .description {font-size: 20px}
+  .description:hover {font-size: 25px}
